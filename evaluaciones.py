@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
+# Importa la clase
 from pizza import Pizza
-
+# Asigna los atributos de la clase
 pizza1 = Pizza()
-# print(pizza1.tamano)
 
 pizza1.pedido()
 #print (pizza1.pizza_valida)
-
+#Muestra los atributos si la pizza es validada
 if pizza1.pizza_valida == True:
     print (f""" 
             Su Pedido está correcto y este es el detalle:
