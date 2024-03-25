@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #importa listas de ingredientes desde ingredientes.py para facilitar variedad de stock
-from ingredientes import tipos_masas, proteicos, vegetales
+from ingredientes import tipos_masas, proteicos, vegetales, salsas
 # Se crea la clase de tipo pizza con los atributos correspondientes
 class Pizza():
     precio = 10000
@@ -29,13 +29,18 @@ class Pizza():
 
         # Validar y almacenar el tipo de masa
         self.tipo_masa = self.validar_elemento(input("Elija el Tipo de Masa:\n- Delgada\n- Tradicional\n"), tipos_masas)
+        
+        # Validar Salsa
+        self.salsa = self.validar_elemento(input("Elija una salsa:\n- Salsa de tomates\n- Salsa BBQ\n- Sin salsa\n"), salsas)
+
 
         # Validar si la pizza es válida        
         self.pizza_valida = all([
             self.proteicos,
             self.vegetal_1,
             self.vegetal_2,
-            self.tipo_masa
+            self.tipo_masa,
+            self.salsas
         ])
 
         

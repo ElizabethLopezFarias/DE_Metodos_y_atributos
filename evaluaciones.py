@@ -15,6 +15,7 @@ if pizza1.pizza_valida == True:
                 Ingrediente Vegetal 1: {pizza1.vegetal_1}
                 Ingrediente Vegetal 2: {pizza1.vegetal_2}
                 Tipo de Masa: {pizza1.tipo_masa}
+                Tipo de Salsa: {pizza1.salsa}
                 Precio: {pizza1.precio}
             """)
 
